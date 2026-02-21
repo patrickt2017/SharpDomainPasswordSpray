@@ -17,7 +17,7 @@ If you run the executable without arguments, the help menu will be displayed.
 
 ### 1. Username Enumeration Only
 
-Harvest a list of active users and save them to a file without spraying.
+Harvest a list of active users (excludes disabled users and those who are already one attempt away) and save them to a file without spraying.
 
 ```bash
 .\SharpDomainPasswordSpray.exe -GetUsers -OutFile active_users.txt
