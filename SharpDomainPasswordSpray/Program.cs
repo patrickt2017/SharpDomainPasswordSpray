@@ -53,7 +53,7 @@ namespace SharpDomainPasswordSpray
             // --- OPTION: Get Users Only ---
             if (getUsersOnly)
             {
-                Console.WriteLine("[*] Mode: User Discovery Only");
+                Console.WriteLine("[*] Mode: Username Enumeration Only");
                 var discoveredUsers = GetDomainUserList(currentDomainPath, true, true, filter);
                 if (discoveredUsers != null && discoveredUsers.Count > 0)
                 {
@@ -132,7 +132,7 @@ Arguments:
   -UserList         Path to a file containing usernames (optional). 
                     If omitted, the tool queries the domain for users.
   -Domain           The FQDN of the domain (e.g., corp.local).
-  -GetUsers         Flag to ONLY gather a list of users and exit.
+  -GetUsers         Flag to ONLY gather a list of usernames and exit.
   -OutFile          File to write successful logins or discovered users.
   -Filter           Additional LDAP filter for user discovery.
   -UsernameAsPassword  Use the username as the password for each account.
